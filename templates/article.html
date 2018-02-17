@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<!-- <h1>inside ARTICLE</h1> -->
+
+
+<div class="container mt-5">
+
+        <header>
+            <h1>{{ article.title }}</h1>
+            <time datetime="article.date.isoformat()" >{{ article.locale_date }}</time>
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">#{{ tag }}</a>
+            {% endfor %}
+
+
+        </header>
+
+        <div class="mt-5 entry-content">
+            {{ article.content }}
+            <br>
+        </div>
+        </div>
+{% endblock %}

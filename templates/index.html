@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+ {% block content %}
+<!--
+<h1>inside index</h1> -->
+<div class=" container mt-5 ">
+ {% for article in articles %}
+<div class="mb-4">
+  <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+      <time >{{ article.date|strftime('%B %d, %Y') }}</time>
+          {% for tag in article.tags %}
+          <a class="tag" href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
+          {% endfor %}
+</div>
+
+{% endfor %}
+</div>
+{% endblock content %}

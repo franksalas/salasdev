@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <!-- logo -->
+  <a class="navbar-brand" href="/">
+        <i class="fa fa-code "></i> {{ SITENAME }}</a>
+  <!-- logo -->
+  <!-- hambrg -->
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <!-- hambrg -->
+
+  <!-- links -->
+
+  <div class="collapse navbar-collapse" id="collapse_target">
+
+    <ul class="navbar-nav ml-auto">
+      {% for name, link in SOCIAL %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ link }}"><i class="fa fa-{{ name }}"></i></a>
+      </li>
+      {% endfor %}
+{% if SHOW_ARCHIVES %}
+      <li class="nav-item">
+        <a class="nav-link" href="/archives.html"><i class="fa fa-archive"></i></a>
+      </li>
+        {% endif %}
+        {% if SHOW_TAGS %}
+              <li class="nav-item">
+                <a class="nav-link" href="/tags.html"><i class="fa fa-tags"></i></a>
+              </li>
+                {% endif %}
+
+    </ul>
+  </div>
+  <!-- links -->
+</nav>
