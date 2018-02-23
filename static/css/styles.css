@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 pre {
   font-family: 'Source Code Pro', monospace;
-  display: block;
-  font-size: 1em; }
+  font-size: 1.0em; }
 
 .tag {
   font-style: italic;
@@ -30,3 +29,9 @@ div.prompt.input_prompt {
 
 div.prompt.output_prompt {
   display: none; }
+
+.date {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+  margin-top: 3px; }

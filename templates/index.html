@@ -7,7 +7,7 @@
  {% for article in articles %}
 <div class="mb-4">
   <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-      <time >{{ article.date|strftime('%B %d, %Y') }}</time>
+      <div class="date">{{ article.date|strftime('%B %d, %Y') }}</div>
           {% for tag in article.tags %}
           <a class="tag" href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
           {% endfor %}
