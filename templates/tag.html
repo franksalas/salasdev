@@ -8,7 +8,7 @@
   <h1 class="tag" style="margin-bottom: 30px;">#{{ tag }}</h1> {% for article in articles %}
 
   <h2><a href='/{{ article.url }}'>{{ article.title }}</a></h2>
-  <span>{{ article.date.strftime('%d.%m.%Y') }}</span> {% endfor %}
+  <div class="date">{{ article.date|strftime('%B %d, %Y') }}</div>{% endfor %}
 
 
 </div>
