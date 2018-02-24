@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 pre {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.0em; }
+  font-size: 1.0em;
+  padding: 20px;
+  /* white-space: pre-wrap; */
+ }
+
+
+
 
 .tag {
   font-style: italic;
@@ -35,3 +41,33 @@ div.prompt.output_prompt {
   color: #666;
   font-size: 14px;
   margin-top: 3px; }
+
+
+/* personal addon */
+
+  /* pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}       
+
+code {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+}
+
+#content code {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #bebab0;
+} */
